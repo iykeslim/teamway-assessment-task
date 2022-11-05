@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+/* Media Query for Mobile Devices */
+/* center my card - custom css */
+*{
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
+.container {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+ @media (max-width: 480px) {
+   body {
+     /* background-color: red; */
+   }
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ /* Media Query for low resolution  Tablets, Ipads */
+ @media (min-width: 481px) and (max-width: 767px) {
+   body {
+     /* background-color:rgb(192, 164, 164) */
+   }
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ /* Media Query for Tablets Ipads portrait mode */
+ @media (min-width: 768px) and (max-width: 1024px) {
+   body {
+     /* background-color: blue; */
+   }
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ /* Media Query for Laptops and Desktops */
+ @media (min-width: 1025px) and (max-width: 1280px) {
+   body {
+     /* background-color: green; */
+   }
+ }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ /* Media Query for Large screens */
+ @media (min-width: 1281px) {
+   body {
+     /* background-color: white; */
+   }
+ }
