@@ -1,9 +1,9 @@
 import React from 'react'
-import welcomeCard from './welcomeCard.css'
+import './welcomeCard.css'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const WelcomeCard = () => {
+const WelcomeCard = ( {title, _onStartClick} ) => {
   return ( 
       <div className='col d-flex justify-content-center'>
           <Card id='main-container' className='h-100 text-center shadow p-3 mb-5 bg-white rounded border-0 rounded'>
@@ -13,7 +13,7 @@ const WelcomeCard = () => {
                     <Card.Text className='text-white-100'>
                         Only honest answers guarantee honest results
                     </Card.Text>
-                  <Button variant="secondary border-0" className='btn btn-outline-dark btn-sm'>Let's Go</Button>
+          <Button variant="secondary border-0" className='btn btn-outline-dark btn-sm' onClick={_onStartClick}>Let's Go</Button>
                 </Card.Body>
             </Card>
       </div>
